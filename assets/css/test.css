@@ -1,0 +1,39 @@
+#question1{
+  display: block;
+}
+#question2{
+  display: none;
+}
+#question3{
+  display: none;
+}
+#result{
+  display:none;
+}
+#wrong{
+  color: #E60202;
+  font-weight: bolder;
+  font-size: 70px;
+}
+#right{
+  color: #4AE200;
+  font-weight: bolder;
+  font-size: 70px;
+}
+h2{
+  color: #ffffff;
+  background-color: black;
+}
+.wrong, .right{
+  
+  color: black;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  background-color: lightgray;
+  border: 0px;
+  border-radius: 15px;
+  padding: 6px;
+  margin: 8px;
+  font-weight: lighter;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Deportes</title>
+      <link rel="stylesheet" href="../assets/css/test.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <img src="../assets/images/escudo.jpg" alt="" width="50px">
+      <h1>TRÍVIA PERUANA</h1>
+      <h2>GASTRONOMÍA</h2>
+      <div id="question1">
+        <h3> Pregunta N°1</h3>
+        <p>¿Comida típica de la sierra del Perú?</p>
+        <img src="images/rocotorelleno.jpg" width="140px" alt=""> <br/><br/>
+        <button class="right" name = "boton"  onclick="question2('right');"> Rocoto Relleno</button>
+        <button class="wrong" name = "boton"  onclick="question2();"> Ceviche</button>
+        <button class="wrong" name = "boton"  onclick="question2();"> Arroz Chaufa</button>
+      </div>
+
+      <div id="question2">
+        <h3> Pregunta N°2</h3>
+        <p>¿Cuántos años tiene la receta de la causa rellena?</p>
+        <img src="images/causarellena.jpg" width="120px" alt=""> <br /><br />
+        <button class="wrong" name = "boton"  onclick="question3();"> Más de 100 años </button>
+        <button class="right" name = "boton"  onclick="question3('right');"> Más de 50 años</button>
+        <button class="wrong" name = "boton"  onclick="question3();"> Más de 150 años</button>
+      </div>
+
+      <div id="question3">
+        <h3> Pregunta N°3</h3>
+        <p>¿Quién popularizó el “lomo saltado”?</p>
+        <img src="images/lomosaltado.jpg" width="150px" alt=""> <br/><br/>
+        <button class="wrong" name = "boton"  onclick="seeResult();">Los Chifas en el Perú</button>
+        <button class="right" name = "boton"  onclick="seeResult('right');"> Teresa Ocampo </button>
+        <button class="wrong" name = "boton"  onclick="seeResult();"> Gastón Acurio</button>
+      </div>
+
+      <div id="result">
+        <h3>N° de aciertos:</h3>
+        <!-- en este elemento p vamos a agregar el numero de aciertos -->
+        <p id="right"></p>
+        <h3>N° de desaciertos:</h3>
+        <!-- en este elemento p vamos a agregar el numero de desaciertos -->
+        <p id="wrong"></p>
+        <!-- en este elemento p vamos un texto si tiene más aciertos que desaciertos y viceversa -->
+        <p id="text"></p>
+
+        <button id="buttonGoCategory" type="button" name="button" onclick="location.href='../category.html'">Jugar otra vez</button>
+      </div>
+    </div>
+    <script src="../assets/js/test.js" type="text/javascript"></script>
+  </body>
+</html>

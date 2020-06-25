@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Deportes</title>
+    <link rel="stylesheet" href="../assets/css/test.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <img src="../assets/images/escudo.jpg" alt="" width="50px">
+      <h1>TRÍVIA PERUANA</h1>
+      <h2>DEPORTES</h2>
+      <div id="question1">
+        <span id="countdown"></span>
+        <h3> Pregunta N°1</h3>
+        <p>¿Cuál es el nombre de este famoso futbolista?</p>
+        <img src="images/jf.jpg" width="60px" alt=""> <br/><br/>
+        <button class="right" name = "boton"  onclick="question2('right');"> Jefferson Farfán</button><br>
+        <button class="wrong" name = "boton"  onclick="question2();"> Paolo Guerrero</button><br>
+        <button class="wrong" name = "boton"  onclick="question2();"> Edison Flores</button>
+      </div>
+
+      <div id="question2">
+        <h3> Pregunta N°2</h3>
+        <p>¿Quién es el máximo goleador de la selección peruana?</p>
+        <img src="images/lolofer.jpg" width="130px" alt=""> <br/><br/>
+        <button class="wrong" name = "boton"  onclick="question3();"> Claudio Pizarro  </button><br>
+        <button class="right" name = "boton"  onclick="question3('right');"> Paolo Guerrero  </button><br>
+        <button class="wrong" name = "boton"  onclick="question3();"> Lolo Fernández  </button>
+      </div>
+
+      <div id="question3">
+        <h3> Pregunta N°3</h3>
+        <p>¿Cuál ha sido la mayor goleada a favor de Perú en un Mundial?</p>
+        <img src="images/peruiran.jpg" width="150px" alt=""> <br/><br/>
+        <button class="wrong" name = "boton"  onclick="seeResult();"> Argentina 1978</button>
+        <button class="right" name = "boton"  onclick="seeResult('right');"> Uruguay 1978 </button>
+        <button class="wrong" name = "boton"  onclick="seeResult();"> España 1982</button>
+      </div>
+
+      <div id="result">
+        <h3>N° de aciertos:</h3>
+        <!-- en este elemento p vamos a agregar el numero de aciertos -->
+        <p id="right"></p>
+        <h3>N° de desaciertos:</h3>
+        <!-- en este elemento p vamos a agregar el numero de desaciertos -->
+        <p id="wrong"></p>
+        <!-- en este elemento p vamos un texto si tiene más aciertos que desaciertos y viceversa -->
+        <p id="text"></p>
+
+        <button id="buttonGoCategory" type="button" name="button" onclick="location.href='../category.html'">Jugar otra vez</button>
+      </div>
+    </div>
+    <script src="../assets/js/test.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Categorías</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/images/escudo.jpg" alt="" width="100px">
+      <h1>TRÍVIA PERUANA</h1>
+      <!-- Saludo con nombre -->
+      <h2 id="greeting">Hola </h2>
+      <p> Elige tu categoria favorita </p>
+      <!--Mostramos botones de las 2 categorías-->
+      <button id="buttonSport" type="button" name="button" onclick="location.href='./sport/sport.html'">DEPORTES</button>
+      <button id="buttonGastronomy" name="button" onclick="location.href='./gastronomy/gastronomy.html'">GASTRONOMÍA</button>
+    </div>
+    <script type="text/javascript">
+      document.getElementById('greeting').innerHTML+=localStorage.getItem('name');
+    </script>
+  </body>
+</html>
+
